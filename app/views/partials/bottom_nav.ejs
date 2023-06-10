@@ -1,0 +1,27 @@
+<div class="content">
+  <!-- Your page content goes here -->
+</div>
+
+<footer class="fixed-footer">
+  <nav class="navbar navbar-dark bg-dark">
+    <div class="container">
+      <h6 class="display-6 navbar-text">&copy;2023 All rights reserved</h6>
+    </div>
+  </nav>
+</footer>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var footer = document.querySelector('.fixed-footer');
+    
+    function toggleFooterVisibility() {
+      if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+        footer.style.display = 'block';
+      } else {
+        footer.style.display = 'none';
+      }
+    }
+
+    window.addEventListener('scroll', toggleFooterVisibility);
+  });
+</script>

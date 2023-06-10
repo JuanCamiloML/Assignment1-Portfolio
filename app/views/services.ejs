@@ -1,0 +1,30 @@
+<%- include ('partials/header.ejs') %>
+<%- include ('partials/main_nav.ejs') %>
+
+<main class="container">
+    <div class="jumbotron">
+        <h1><%= title %> Page</h1>
+    </div>
+
+    <div class="services">
+        <h2>My Services</h2>
+        <div class="service">
+            <img src="img/csharp.png" alt="C# Programming" style: width="500"; height="300px">
+            <h3>General Programming using C#</C></h3>
+            <p>I offer general programming services using C#, such as basic applications using the .NET framework.</p>
+        </div>
+        <div class="service">
+            <img src="img/java.png" alt="Java programming" style: width="500"; height="300px">
+            <h3>Java Programming</h3>
+            <p>My java development can help with applications of higher requirements.</p>
+        </div>
+        <div class="service">
+            <img src="img/SQL.png" alt="SQL database management" style: width="500"; height="300px">
+            <h3>Oracle SQL management</h3>
+            <p>I specialize in managing databases making use of PL/SQL functions.</p>
+        </div>
+    </div>
+</main>
+
+<%- include ('partials/bottom_nav.ejs') %>
+<%- include ('partials/footer.ejs') %>
